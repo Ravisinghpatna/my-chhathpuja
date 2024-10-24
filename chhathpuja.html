@@ -132,7 +132,7 @@
 
 <header>
     
-    <img src="logo-removebg.png" alt="no image found" class="logo-image">
+    <img src="https://github.com/Ravisinghpatna/my-chhathpuja/blob/main/logo-removebg.png" alt="no image found" class="logo-image">
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>

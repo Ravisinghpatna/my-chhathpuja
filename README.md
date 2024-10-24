@@ -131,18 +131,76 @@
             color: #ff4500;
         }
 
+
+        h1 {
+            color: #ff4500;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px #888888;
+        }
+
+        .countdown-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .countdown-box {
+            background: #ffffff;
+            border: 2px solid #ff4500;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .countdown-box h2 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ff4500;
+        }
+
+        .countdown-box p {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333333;
+        }
+
+        .countdown-end-message {
+            color: #28a745;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #444;
+            margin-top: 30px;
+        }
   </style>
 
 </head>
 <body>
-    <h1>Countdown to 5th November 2024</h1>
-    <div id="countdown"></div>
+    <h1>Countdown to Chhath Puja 2024</h1>
+    <div class="countdown-container">
+        <div class="countdown-box">
+            <h2 id="days"></h2>
+            <p>Days</p>
+        </div>
+        <div class="countdown-box">
+            <h2 id="hours"></h2>
+            <p>Hours</p>
+        </div>
+        <div class="countdown-box">
+            <h2 id="minutes"></h2>
+            <p>Minutes</p>
+        </div>
+        <div class="countdown-box">
+            <h2 id="seconds"></h2>
+            <p>Seconds</p>
+        </div>
+    </div>
+
+    <div id="message" class="countdown-end-message"></div>
 
     <script>
-    
         // Set the date for the countdown (5th November 2024)
         var countDownDate = new Date("Nov 5, 2024 00:00:00").getTime();
-
 
         // Update the countdown every 1 second
         var countdownFunction = setInterval(function() {
@@ -158,14 +216,17 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+            // Display the results in the respective HTML elements
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
 
-            // If the countdown is finished, display some text
+            // If the countdown is finished, display a message
             if (distance < 0) {
                 clearInterval(countdownFunction);
-                document.getElementById("countdown").innerHTML = "TIME UP!";
+                document.querySelector('.countdown-container').style.display = 'none';
+                document.getElementById("message").innerHTML = "Happy Chhath Puja!";
             }
         }, 1000);
     </script>
@@ -173,10 +234,10 @@
 
 
 <header>
-    
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>
+
 </header>
 
 <div class="content">

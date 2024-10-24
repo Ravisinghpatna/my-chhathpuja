@@ -136,7 +136,7 @@
 
 </head>
 <body>
-    <h1 style="padding-left: 70px;">Countdown to 5th November 2024</h1>
+    <h1>Countdown to 5th November 2024</h1>
     <div id="countdown"></div>
 
     <script>

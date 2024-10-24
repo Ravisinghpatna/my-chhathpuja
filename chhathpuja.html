@@ -222,7 +222,7 @@
     </div>
 
     <div class="ravi">
-        <span class="highlight">@Ravi Singh</span>
+        <span class="highlight">@the_ravisingh27</span>
     </div>
 </div>
 

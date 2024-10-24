@@ -117,13 +117,21 @@
         text-shadow: 0 0 5px red, 0 0 5px orange, 0 0 5px yellow;
       }
     }
-  </style>
 
+    .logo-image {
+    position: absolute; /* Positions the image in the top-left corner */
+    top: 20px; /* Adjust the space from the top */
+    left: 18px; /* Adjust the space from the left */
+    width: 70px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 
 </head>
 <body>
 
 <header>
+    <img src="./project-2/img/logo-removebg.png" alt="no image found" class="logo-image">
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>

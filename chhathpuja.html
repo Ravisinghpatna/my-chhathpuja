@@ -125,53 +125,49 @@
     width: 70px; /* Adjust the width of the image */
     height: auto; /* Maintain aspect ratio */
     }
-
-    #countdown {
-            font-size: 40px;
-            color: #ff4500;
-        }
-
-
         h1 {
-            color: #ff4500;
-            font-size: 3em;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px #888888;
+            color: #ffd700;
+            font-size: 3.5em;
+            text-shadow: 4px 4px 8px #ff9900;
+            margin-bottom: 40px;
         }
 
         .countdown-container {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
 
         .countdown-box {
-            background: #ffffff;
-            border: 2px solid #ff4500;
-            border-radius: 10px;
-            padding: 20px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 3px solid rgba(255, 215, 0, 0.7);
+            border-radius: 12px;
+            padding: 30px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(255, 165, 0, 0.5);
         }
 
         .countdown-box h2 {
-            font-size: 2.5em;
+            font-size: 3.5em;
             margin: 0;
-            color: #ff4500;
+            color: #ffdd44;
+            text-shadow: 3px 3px 6px rgba(255, 165, 0, 0.8);
         }
 
         .countdown-box p {
-            font-size: 1.2em;
+            font-size: 1.5em;
+            color: #f4e2c1;
             margin: 0;
-            color: #333333;
+            font-weight: bold;
         }
 
         .countdown-end-message {
-            color: #28a745;
+            color: #ffd700;
             font-size: 2.5em;
             font-weight: bold;
-            text-shadow: 2px 2px 4px #444;
-            margin-top: 30px;
+            margin-top: 50px;
+            text-shadow: 4px 4px 10px rgba(255, 165, 0, 0.8);
         }
+  
   </style>
 
 </head>
@@ -226,14 +222,14 @@
             if (distance < 0) {
                 clearInterval(countdownFunction);
                 document.querySelector('.countdown-container').style.display = 'none';
-                document.getElementById("message").innerHTML = "Happy Chhath Puja!";
+                document.getElementById("message").innerHTML = "Blessed Chhath Puja!";
             }
         }, 1000);
     </script>
 
 
-
 <header>
+
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>

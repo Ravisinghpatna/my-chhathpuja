@@ -172,7 +172,7 @@
 
 </head>
 <body>
-    <h1 style="padding-left: 70px;">Countdown to Chhath Puja 2024</h1>
+    <h1>Countdown to Chhath Puja 2024</h1>
     <div class="countdown-container">
         <div class="countdown-box">
             <h2 id="days"></h2>

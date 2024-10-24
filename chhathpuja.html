@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -125,18 +126,59 @@
     width: 70px; /* Adjust the width of the image */
     height: auto; /* Maintain aspect ratio */
     }
+
+    #countdown {
+            font-size: 40px;
+            color: #ff4500;
+        }
+
   </style>
 
 </head>
 <body>
+    <h1 style="padding-left: 70px;">Countdown to 5th November 2024</h1>
+    <div id="countdown"></div>
+
+    <script>
+    
+        // Set the date for the countdown (5th November 2024)
+        var countDownDate = new Date("Nov 5, 2024 00:00:00").getTime();
+
+
+        // Update the countdown every 1 second
+        var countdownFunction = setInterval(function() {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            var distance = countDownDate - now;
+
+            // Calculate time components
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, display some text
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "TIME UP!";
+            }
+        }, 1000);
+    </script>
+
+
 
 <header>
-    
-    <img src="https://github.com/Ravisinghpatna/my-chhathpuja/blob/main/logo-removebg.png" alt="no image found" class="logo-image">
+    <img src="./project-2/img/logo-removebg.png" alt="no image found" class="logo-image">
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>
-</header>
+</header
 
 <div class="content">
     <h2>About Chhath Puja</h2>

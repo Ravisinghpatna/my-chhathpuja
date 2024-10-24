@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -136,10 +137,23 @@
     <h2>Significance</h2>
     <p>The festival is a time for families to come together and express gratitude for the blessings of health, wealth, and prosperity. Devotees believe that worshiping the Sun God during this festival brings happiness and prosperity to their lives.</p>
 
-    <div class="image-container">
-        <!-- <img src="./project-2/img/Chhath Puja Celebration.jpg" alt="">
-        <img src="./project-2/img/Chhath Puja Celebration1.jpg" alt="">  -->   
-    </div>
+   <p>Chhath Puja is a major Hindu festival dedicated to the Sun God (Surya) and Chhathi Maiya (Goddess Usha). The festival is celebrated over four days, primarily in Bihar, Jharkhand, and Uttar Pradesh, as well as in Nepal and parts of India where Bihari communities live. Each day of the festival holds specific rituals:</p>
+
+<h2> Day 1: Nahay Khay (First Day) Significance: </h2>
+<p>The devotees begin the festival by cleaning their homes and surroundings. They take a holy dip in a river, preferably in the Ganges, and bring home the sacred water to prepare food.
+    Rituals: Devotees cook a simple meal consisting of rice, lentils, and pumpkin curry (Kaddu Bhaat) in earthen or brass utensils, following strict purification practices. This marks the beginning of the fast.</p>
+
+<h2> Day 2: Kharna and Lohanda (Second Day) Significance:</h2>
+<p>The second day is a day of fasting, where devotees abstain from food and water for the entire day.
+    Rituals: The fast is broken in the evening after offering prayers to the Sun God with a special meal called Kharna, which consists of sweet dishes like kheer (made with jaggery, rice, and milk), puris, and bananas. After this, the main 36-hour fast begins without water.</p>
+
+<h2> Day 3: Sandhya Arghya (Third Day) Significance:</h2>
+<p>This is the most important day of Chhath Puja. Devotees gather at the riverbank in the evening to offer the first Arghya (offering) to the setting sun.
+    Rituals: Devotees prepare a basket of fruits, sugarcane, and sweets. The worshippers stand in water and offer Arghya to the setting sun, praying for the well-being of their family and the fulfillment of wishes.</p>
+
+<h2> Day 4: Paran or Suryodaya Arghya (Fourth Day) Significance:</h2>
+<p> The final day of Chhath Puja involves offering prayers to the rising sun.
+    Rituals: Devotees gather at the riverbank before sunrise to offer Usha Arghya (offering to the rising sun). After this, the devotees break their 36-hour fast by consuming Prasad, which marks the end of the festival.</p>
 
     <h2>Rituals</h2>
     <ul>
@@ -176,4 +190,3 @@
 
 </body>
 </html>
-

@@ -12,12 +12,36 @@
             color: #333;
         }
         header {
-            text-align: center;
-            padding: 20px;
-            background-color: #ffcc00;
-            border-radius: 10px;
-            animation: fadeIn 1s ease-in;
-        }
+    width: 100%; /* Set a width to control the row span */
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the header */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    header {
+        width: 80%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    header {
+        width: 90%;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+}
+
+
         h1 {
             font-size: 2.5em;
             color: #8B4513; /* Dark brown color for heading */
@@ -120,9 +144,10 @@
     }
 
     .logo-image {
-    position: absolute; /* Positions the image in the top-left corner */
-    top: 20px; /* Adjust the space from the top */
-    left: 18px; /* Adjust the space from the left */
+    position: absolute; /* Keeps the image positioned absolutely */
+    top: 5px; /* Adjust the space from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift back by half the width of the image */
     width: 70px; /* Adjust the width of the image */
     height: auto; /* Maintain aspect ratio */
     }
@@ -134,11 +159,29 @@
         }
 
         .countdown-container {
-        display: flex;
-        flex-wrap: wrap; /* Allows wrapping on smaller screens */
-        justify-content: center;
-        gap: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center flex items horizontally */
+    max-width: 840px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container within its parent */
+    gap: 10px; /* Space between items */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .countdown-container {
+        gap: 8px; /* Reduce gap slightly for tablets */
     }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .countdown-container {
+        gap: 5px; /* Further reduce gap for small screens */
+        padding: 10px; /* Reduce padding for small screens */
+    }
+}
 
         .countdown-box {
         flex: 1;
@@ -236,8 +279,7 @@
 
 
 <header>
-<!--    <img src="https://raw.githubusercontent.com/Ravisinghpatna/my-chhathpuja/refs/heads/main/logo-removebg.png" alt="image not found" class="logo-image">
-    -->
+
     <img src="https://raw.githubusercontent.com/Ravisinghpatna/my-chhathpuja/main/logo-removebg.png" alt="image not found" class="logo-image">
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
@@ -291,14 +333,6 @@
         <span class="highlight">@the_ravisingh27</span>
     </div>
 </div>
-
-<script>
-    // Trigger the animation after the page loads
-    window.onload = function() {
-        document.querySelector('.ravi').style.opacity = 1; // Make it visible
-    };
-</script>
-
 <footer>
     <p>Wishing you and your family a prosperous Chhath Puja!</p>
 </footer>

@@ -43,6 +43,7 @@
 
 
         h1 {
+            text-align: center;
             font-size: 2.5em;
             color: #8B4513; /* Dark brown color for heading */
             animation: slideIn 1s ease-in;

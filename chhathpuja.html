@@ -281,13 +281,18 @@
 
 <header>
 
-    <img src="https://raw.githubusercontent.com/Ravisinghpatna/my-chhathpuja/main/logo-removebg.png" alt="image not found" class="logo-image">
+    <img src="https://raw.githubusercontent.com/Ravisinghpatna/my-chhathpuja/main/logo-removebg.png" alt="image not found" class="logo-image" id="logo">
     <h1 class="chhath_puja">Happy Chhath Puja!</h1>
     <h2>Bihar Most Awaited Chhath Puja Festival</h2>
     <p>Celebrate the festival of Chhath with joy and devotion.</p>
 
 </header>
-
+<script>
+    document.getElementById('logo').addEventListener('click', function() {
+        this.style.display = 'none'; // Hides the image
+    });
+</script>
+    
 <div class="content">
     <h2>About Chhath Puja</h2>
     <p>Chhath Puja is an ancient Hindu festival dedicated to the Sun God (Surya) and Chhathi Maiya. It is primarily celebrated in the Indian states of Bihar, Jharkhand, Uttar Pradesh, and by the diaspora worldwide. The festival lasts for four days and involves various rituals, including fasting, offering prayers, and making offerings of traditional food to the Sun.</p>

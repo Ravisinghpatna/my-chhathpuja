@@ -19,6 +19,7 @@
             animation: fadeIn 1s ease-in;
         }
         h1 {
+            font-size: 2.5em;
             color: #8B4513; /* Dark brown color for heading */
             animation: slideIn 1s ease-in;
         }
@@ -36,7 +37,7 @@
             margin: 20px 0;
         }
         img {
-            width: 100%;
+            width: auto;
             max-width: 500px;
             border-radius: 10px;
             transition: transform 0.3s;
@@ -86,7 +87,7 @@
 
 <style>
     .chhath_puja, .ravi {
-      font-size: 50px;
+        font-size: 2.5em;
       font-weight: bold;
       background: linear-gradient(to right, #ff416c, #ff4b2b);
       -webkit-background-clip: text;
@@ -133,18 +134,23 @@
         }
 
         .countdown-container {
-            display: flex;
-            gap: 20px;
-        }
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center;
+        gap: 10px;
+    }
 
         .countdown-box {
-            background: rgba(255, 215, 0, 0.1);
-            border: 3px solid rgba(255, 215, 0, 0.7);
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 8px 16px rgba(255, 165, 0, 0.5);
-        }
+        flex: 1;
+        min-width: 100px;
+        max-width: 200px;
+        background: rgba(255, 215, 0, 0.1);
+        border: 3px solid rgba(255, 215, 0, 0.7);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(255, 165, 0, 0.5);
+    }
 
         .countdown-box h2 {
             font-size: 3.5em;
@@ -223,6 +229,7 @@
                 clearInterval(countdownFunction);
                 document.querySelector('.countdown-container').style.display = 'none';
                 document.getElementById("message").innerHTML = "Blessed Chhath Puja!";
+                document.getElementById("message").style.paddingTop = "25px";
             }
         }, 1000);
     </script>

@@ -222,7 +222,7 @@
 
 </head>
 <body>
-    <h1>Countdown to Chhath Puja 2024</h1>
+    <h1>Countdown to Chhath Puja 2025</h1>
     <div class="countdown-container">
         <div class="countdown-box">
             <h2 id="days"></h2>
@@ -245,8 +245,8 @@
     <div id="message" class="countdown-end-message"></div>
 
     <script>
-        // Set the date for the countdown (5th November 2024)
-        var countDownDate = new Date("Nov 5, 2024 00:00:00").getTime();
+        // Set the date for the countdown (25th October 2025)
+        var countDownDate = new Date("Oct 25, 2025 00:00:00").getTime();
 
         // Update the countdown every 1 second
         var countdownFunction = setInterval(function() {
@@ -336,12 +336,7 @@
     </div>
 
     <div class="ravi">
-        <span class="highlight">@the_ravisingh27</span>
+        <span class="highlight">@the_ravisingh27</span><br>
+		
     </div>
-</div>
-<footer>
-    <p>Wishing you and your family a prosperous Chhath Puja!</p>
-</footer>
-
-</body>
-</html>
+</div> 

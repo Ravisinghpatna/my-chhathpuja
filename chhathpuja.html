@@ -246,7 +246,7 @@
 
     <script>
         // Set the date for the countdown (25th October 2025)
-        var countDownDate = new Date("Oct 25, 2025 00:00:00").getTime();
+        var countDownDate = new Date("Nov 13, 2026 00:00:00").getTime();
 
         // Update the countdown every 1 second
         var countdownFunction = setInterval(function() {
